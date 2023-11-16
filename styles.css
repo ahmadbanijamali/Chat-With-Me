@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+  width: 500px; /* Set a specific starting width */
+  max-width: 700px !important; /* Adjust the maximum width as needed */
+  max-height: 400px;
+  font-family: 'Arial', sans-serif;
+  margin: 10px;
+  background-color: #f4f4f4; /* Light background color */
+  font-size: 15px;
+}
+
+#chat-container {
+  /* width: 500px; /* Set a specific starting width */
+  max-width: 700px !important; /* Adjust the maximum width as needed */
+  width: calc(100% - 170px); /* Adjust width based on sessions-container (150px width + 20px for potential margins/paddings) */
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff; /* White background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.user-message, .bot-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-message {
+  background-color: #66c2ff; /* Light blue for user messages */
+  color: #fff; /* White text color */
+}
+
+.bot-message {
+  background-color: #c5dbc5; /* Light green for bot messages */
+  color: #333; /* Dark text color */
+}
+
+#message-input {
+  width: calc(100% - 24px); /* Adjusted width */
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green button color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* styles.css */
+#sessions-container {
+  float: left;
+  width: 150px; /* Adjust as necessary */
+  height: 400px; /* Adjust to match chat-container if needed */
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+#chat-container {
+  float: right;
+  width: calc(87% - 120px); /* Adjust width based on sessions-container */
+  /* ... existing styles ... */
+}
+
+#sessions-list {
+  padding: 0;
+  margin: 0;
+}
+
+#sessions-container {
+  float: left;
+  width: 150px;
+  height: 400px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#sessions-list li {
+  max-width: 200px !important;
+  width: 120px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(to right, #a5a3a3, #cccccc); /* Gradient background with pink colors */
+  color: #333; /* Dark text color */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition effect for background and text color */
+  margin-bottom: 8px; /* Adjust the margin between titles */
+  font-size: 12px; /* Increase font size */
+}
+
+#sessions-list li:hover {
+  background: linear-gradient(to right, #a18cd1, #fbc2eb); /* Gradient background with purple colors on hover */
+  color: #fff; /* White text color on hover */
+}

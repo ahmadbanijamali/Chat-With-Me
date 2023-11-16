@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Chat With Me",
+  "version": "1.0",
+  "description": "A simple chatbot using OpenAI",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+    // Note: "default_popup" has been removed
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ]
+}
