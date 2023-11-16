@@ -53,9 +53,4 @@ The extension was packaged and tested in a local environment before being deploy
 ## Conclusion
 The "Chat With Me" Chrome Extension project achieved its objectives by delivering a functional and user-friendly tool for real-time interaction with an AI chatbot. The extension was well-received by users and laid the groundwork for future enhancements.
 
-## Appendices
-- **Appendix A**: User Guide
-- **Appendix B**: Issue Tracking and Reporting Procedures
-- **Appendix C**: Change Log and Update History
-
 ---
